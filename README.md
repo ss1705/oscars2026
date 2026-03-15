@@ -36,6 +36,6 @@ A sleek, real-time web app covering everything you need to know before the **98t
 ## Getting Started
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/oscars2026.git
+git clone https://github.com/ss1705/oscars2026.git
 cd oscars2026
 npm install
