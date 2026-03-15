@@ -106,5 +106,11 @@ export async function POST(req: NextRequest) {
     response = await plainModel.invoke(finalMessages);
   }
 
-  return NextResponse.json({ reply: response.content });
+  const reply = typeof response.content === "string" 
+  ? response.content 
+  : Array.isArray(response.content)
+    ? response.content.filter((c: any) => c.type === "text").map((c: any) => c.text).join("")
+    : "";
+
+  return NextResponse.json({ reply });
 }
