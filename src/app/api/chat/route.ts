@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
 
   const model = new ChatOpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
-    model: "meta-llama/llama-3.3-70b-instruct:free",
+    model: "openrouter/free",
     configuration: { baseURL: "https://openrouter.ai/api/v1" },
     temperature: 0.7,
   }).bindTools(tools);
@@ -100,7 +100,7 @@ export async function POST(req: NextRequest) {
 
     const plainModel = new ChatOpenAI({
       apiKey: process.env.OPENROUTER_API_KEY,
-      model: "meta-llama/llama-3.3-70b-instruct:free",
+      model: "openrouter/free",
       configuration: { baseURL: "https://openrouter.ai/api/v1" },
       temperature: 0.7,
     });
