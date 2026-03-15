@@ -1,0 +1,425 @@
+{
+  "categories": [
+    {
+      "name": "Best Picture",
+      "nominees": [
+        {
+          "title": "One Battle After Another",
+          "director": "Paul Thomas Anderson",
+          "nominations": 13,
+          "imdbScore": 8.1,
+          "synopsis": "A relentless, visceral odyssey following a veteran's spiral through post-war America.",
+          "winProbability": 69,
+          "isPredictedWinner": true
+        },
+        {
+          "title": "Sinners",
+          "director": "Ryan Coogler",
+          "nominations": 16,
+          "imdbScore": 8.4,
+          "synopsis": "Twin brothers return to 1930s Mississippi and face a supernatural evil in this genre-defying epic.",
+          "winProbability": 27,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "Hamnet",
+          "director": "Chlo\u00e9 Zhao",
+          "nominations": 7,
+          "imdbScore": 7.8,
+          "synopsis": "Shakespeare's grief reimagined through the eyes of his wife Agnes after the death of their son.",
+          "winProbability": 2,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "Frankenstein",
+          "director": "Guillermo del Toro",
+          "nominations": 7,
+          "imdbScore": 7.6,
+          "synopsis": "A visually sumptuous reimagining of the classic monster tale exploring creation and abandonment.",
+          "winProbability": 1,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "Marty Supreme",
+          "director": "Josh Safdie",
+          "nominations": 6,
+          "imdbScore": 7.9,
+          "synopsis": "A frenzied portrait of a ping-pong obsessive clawing his way to greatness in 1980s New York.",
+          "winProbability": 1,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "Bugonia",
+          "director": "Ansel Elgort",
+          "nominations": 4,
+          "imdbScore": 7.2,
+          "synopsis": "A darkly comic sci-fi satire about a tech billionaire convinced a fast-food worker is the key to saving the world.",
+          "winProbability": 0,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "F1",
+          "director": "Joseph Kosinski",
+          "nominations": 4,
+          "imdbScore": 7.5,
+          "synopsis": "An aging Formula 1 driver comes out of retirement to mentor a rookie and face his own demons on the track.",
+          "winProbability": 0,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "The Secret Agent",
+          "director": "Kleber Mendon\u00e7a Filho",
+          "nominations": 5,
+          "imdbScore": 7.7,
+          "synopsis": "A Brazilian espionage thriller set during the country's military dictatorship era.",
+          "winProbability": 0,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "Sentimental Value",
+          "director": "Joachim Trier",
+          "nominations": 8,
+          "imdbScore": 7.9,
+          "synopsis": "A Norwegian father-daughter reunion story about art, legacy, and unresolved grief.",
+          "winProbability": 0,
+          "isPredictedWinner": false
+        },
+        {
+          "title": "Train Dreams",
+          "director": "Clint Bentley",
+          "nominations": 3,
+          "imdbScore": 7.4,
+          "synopsis": "An adaptation of Denis Johnson's novella about a laborer's solitary life in the American Northwest.",
+          "winProbability": 0,
+          "isPredictedWinner": false
+        }
+      ]
+    },
+    {
+      "name": "Best Actor",
+      "nominees": [
+        {
+          "name": "Michael B. Jordan",
+          "film": "Sinners",
+          "winProbability": 67,
+          "isPredictedWinner": true
+        },
+        {
+          "name": "Timoth\u00e9e Chalamet",
+          "film": "Marty Supreme",
+          "winProbability": 15,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Leonardo DiCaprio",
+          "film": "One Battle After Another",
+          "winProbability": 10,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Ethan Hawke",
+          "film": "Blue Moon",
+          "winProbability": 5,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Wagner Moura",
+          "film": "The Secret Agent",
+          "winProbability": 3,
+          "isPredictedWinner": false
+        }
+      ]
+    },
+    {
+      "name": "Best Actress",
+      "nominees": [
+        {
+          "name": "Jessie Buckley",
+          "film": "Hamnet",
+          "winProbability": 95,
+          "isPredictedWinner": true
+        },
+        {
+          "name": "Rose Byrne",
+          "film": "If I Had Legs I'd Kick You",
+          "winProbability": 2,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Kate Hudson",
+          "film": "Song Sung Blue",
+          "winProbability": 1,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Renate Reinsve",
+          "film": "Sentimental Value",
+          "winProbability": 1,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Emma Stone",
+          "film": "Bugonia",
+          "winProbability": 1,
+          "isPredictedWinner": false
+        }
+      ]
+    },
+    {
+      "name": "Best Supporting Actor",
+      "nominees": [
+        {
+          "name": "Sean Penn",
+          "film": "One Battle After Another",
+          "winProbability": 67,
+          "isPredictedWinner": true
+        },
+        {
+          "name": "Benicio Del Toro",
+          "film": "One Battle After Another",
+          "winProbability": 12,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Jacob Elordi",
+          "film": "Frankenstein",
+          "winProbability": 10,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Delroy Lindo",
+          "film": "Sinners",
+          "winProbability": 8,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Stellan Skarsg\u00e5rd",
+          "film": "Sentimental Value",
+          "winProbability": 3,
+          "isPredictedWinner": false
+        }
+      ]
+    },
+    {
+      "name": "Best Supporting Actress",
+      "nominees": [
+        {
+          "name": "Amy Madigan",
+          "film": "Weapons",
+          "winProbability": 62,
+          "isPredictedWinner": true
+        },
+        {
+          "name": "Teyana Taylor",
+          "film": "One Battle After Another",
+          "winProbability": 18,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Elle Fanning",
+          "film": "Sentimental Value",
+          "winProbability": 10,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Wunmi Mosaku",
+          "film": "Sinners",
+          "winProbability": 7,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Inga Ibsdotter Lilleaas",
+          "film": "Sentimental Value",
+          "winProbability": 3,
+          "isPredictedWinner": false
+        }
+      ]
+    },
+    {
+      "name": "Best Director",
+      "nominees": [
+        {
+          "name": "Ryan Coogler",
+          "film": "Sinners",
+          "winProbability": 55,
+          "isPredictedWinner": true
+        },
+        {
+          "name": "Paul Thomas Anderson",
+          "film": "One Battle After Another",
+          "winProbability": 25,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Chlo\u00e9 Zhao",
+          "film": "Hamnet",
+          "winProbability": 10,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Josh Safdie",
+          "film": "Marty Supreme",
+          "winProbability": 7,
+          "isPredictedWinner": false
+        },
+        {
+          "name": "Joachim Trier",
+          "film": "Sentimental Value",
+          "winProbability": 3,
+          "isPredictedWinner": false
+        }
+      ]
+    },
+    {
+      "name": "Best Original Screenplay",
+      "nominees": [
+        { "title": "Sinners", "director": "Ryan Coogler", "winProbability": 40, "isPredictedWinner": true },
+        { "title": "Sentimental Value", "director": "Eskil Vogt & Joachim Trier", "winProbability": 30, "isPredictedWinner": false },
+        { "title": "Marty Supreme", "director": "Ronald Bronstein & Josh Safdie", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "Blue Moon", "director": "Robert Kaplow", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "It Was Just an Accident", "director": "Jafar Panahi", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Adapted Screenplay",
+      "nominees": [
+        { "title": "Hamnet", "director": "Chloé Zhao & Maggie O'Farrell", "winProbability": 45, "isPredictedWinner": true },
+        { "title": "One Battle After Another", "director": "Paul Thomas Anderson", "winProbability": 30, "isPredictedWinner": false },
+        { "title": "Frankenstein", "director": "Guillermo del Toro", "winProbability": 12, "isPredictedWinner": false },
+        { "title": "Bugonia", "director": "Will Tracy", "winProbability": 8, "isPredictedWinner": false },
+        { "title": "Train Dreams", "director": "Clint Bentley & Greg Kwedar", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Animated Feature",
+      "nominees": [
+        { "title": "Flow", "director": "Gints Zilbalodis", "winProbability": 5, "isPredictedWinner": false },
+        { "title": "Elio", "director": "Domee Shi", "winProbability": 35, "isPredictedWinner": true },
+        { "title": "Zootopia 2", "director": "Jared Bush & Byron Howard", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "KPop Demon Hunters", "director": "Maggie Kang & Chris Appelhans", "winProbability": 20, "isPredictedWinner": false },
+        { "title": "Little Amélie or the Character of Rain", "director": "Maïlys Vallade", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "Arco", "director": "Ugo Bienvenu & Félix de Givry", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best International Feature Film",
+      "nominees": [
+        { "title": "Sentimental Value", "director": "Joachim Trier", "synopsis": "Norway · Norwegian/Swedish/English", "winProbability": 40, "isPredictedWinner": true },
+        { "title": "The Secret Agent", "director": "Kleber Mendonça Filho", "synopsis": "Brazil · Portuguese/German", "winProbability": 30, "isPredictedWinner": false },
+        { "title": "It Was Just an Accident", "director": "Jafar Panahi", "synopsis": "France · Persian/Azerbaijani", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "Sirāt", "director": "Oliver Laxe", "synopsis": "Spain · Spanish/French/Arabic", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "The Voice of Hind Rajab", "director": "Kaouther Ben Hania", "synopsis": "Tunisia · Arabic", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Documentary Feature",
+      "nominees": [
+        { "title": "Come See Me in the Good Light", "director": "Ryan White", "winProbability": 40, "isPredictedWinner": true },
+        { "title": "The Perfect Neighbor", "director": "Geeta Gandbhir", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "Mr Nobody Against Putin", "director": "David Borenstein", "winProbability": 20, "isPredictedWinner": false },
+        { "title": "The Alabama Solution", "director": "Andrew Jarecki", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "Cutting Through Rocks", "director": "Sara Khaki", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Original Score",
+      "nominees": [
+        { "title": "Sinners", "director": "Ludwig Göransson", "winProbability": 55, "isPredictedWinner": true },
+        { "title": "One Battle After Another", "director": "Jonny Greenwood", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "Hamnet", "director": "Max Richter", "winProbability": 12, "isPredictedWinner": false },
+        { "title": "Frankenstein", "director": "Alexandre Desplat", "winProbability": 5, "isPredictedWinner": false },
+        { "title": "Bugonia", "director": "Jerskin Fendrix", "winProbability": 3, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Cinematography",
+      "nominees": [
+        { "title": "Sinners", "director": "Autumn Durald Arkapaw", "winProbability": 45, "isPredictedWinner": true },
+        { "title": "One Battle After Another", "director": "Michael Bauman", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "Marty Supreme", "director": "Darius Khondji", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "Frankenstein", "director": "Dan Laustsen", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "Train Dreams", "director": "Adolpho Veloso", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Film Editing",
+      "nominees": [
+        { "title": "Sinners", "director": "Michael P. Shawver", "winProbability": 40, "isPredictedWinner": true },
+        { "title": "Marty Supreme", "director": "Ronald Bronstein & Josh Safdie", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "One Battle After Another", "director": "Andy Jurgensen", "winProbability": 20, "isPredictedWinner": false },
+        { "title": "Sentimental Value", "director": "Olivier Bugge Coutté", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "F1", "director": "Stephen Mirrione", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Production Design",
+      "nominees": [
+        { "title": "Sinners", "director": "Hannah Beachler", "winProbability": 40, "isPredictedWinner": true },
+        { "title": "One Battle After Another", "director": "Florencia Martin", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "Hamnet", "director": "Fiona Crombie", "winProbability": 20, "isPredictedWinner": false },
+        { "title": "Frankenstein", "director": "Tamara Deverell", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "Marty Supreme", "director": "Jack Fisk", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Costume Design",
+      "nominees": [
+        { "title": "Sinners", "director": "Ruth E. Carter", "winProbability": 45, "isPredictedWinner": true },
+        { "title": "Hamnet", "director": "Malgosia Turzanska", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "Frankenstein", "director": "Kate Hawley", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "Marty Supreme", "director": "Miyako Bellizzi", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "Avatar: Fire and Ash", "director": "Deborah L. Scott", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Makeup & Hairstyling",
+      "nominees": [
+        { "title": "Frankenstein", "director": "Mike Hill & Jordan Samuel", "winProbability": 50, "isPredictedWinner": true },
+        { "title": "The Ugly Stepsister", "director": "Thomas Foldberg", "winProbability": 20, "isPredictedWinner": false },
+        { "title": "Sinners", "director": "Ken Diaz & Mike Fontaine", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "The Smashing Machine", "director": "Kazu Hiro", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "Kokuho", "director": "Kyoko Toyokawa", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Visual Effects",
+      "nominees": [
+        { "title": "Sinners", "director": "Michael Ralla & Espen Nordahl", "winProbability": 35, "isPredictedWinner": true },
+        { "title": "Avatar: Fire and Ash", "director": "Joe Letteri & Richard Baneham", "winProbability": 30, "isPredictedWinner": false },
+        { "title": "F1", "director": "Ryan Tudhope & Nicolas Chevallier", "winProbability": 20, "isPredictedWinner": false },
+        { "title": "Jurassic World Rebirth", "director": "David Vickery", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "The Lost Bus", "director": "Charlie Noble", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Sound",
+      "nominees": [
+        { "title": "Sinners", "director": "Chris Welcker & Benjamin A. Burtt", "winProbability": 45, "isPredictedWinner": true },
+        { "title": "F1", "director": "Gareth John & Al Nelson", "winProbability": 25, "isPredictedWinner": false },
+        { "title": "One Battle After Another", "director": "José Antonio García", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "Frankenstein", "director": "Greg Chapman & Nathan Robitaille", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "Sirāt", "director": "Amanda Villavieja", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Casting",
+      "nominees": [
+        { "title": "Sinners", "director": "Francine Maisler", "winProbability": 40, "isPredictedWinner": true },
+        { "title": "One Battle After Another", "director": "Cassandra Kulukundis", "winProbability": 30, "isPredictedWinner": false },
+        { "title": "Hamnet", "director": "Nina Gold", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "Marty Supreme", "director": "Jennifer Venditti", "winProbability": 10, "isPredictedWinner": false },
+        { "title": "The Secret Agent", "director": "Gabriel Domingues", "winProbability": 5, "isPredictedWinner": false }
+      ]
+    },
+    {
+      "name": "Best Original Song",
+      "nominees": [
+        { "title": "\"Kiss the Sky\" from Sinners", "director": "Ludwig Göransson & Ryan Coogler", "winProbability": 62, "isPredictedWinner": true },
+        { "title": "\"Forbidden Road\" from The Six Triple Eight", "director": "Diane Warren", "winProbability": 15, "isPredictedWinner": false },
+        { "title": "\"Preacher Man\" from Sinners", "director": "Ludwig Göransson", "winProbability": 12, "isPredictedWinner": false },
+        { "title": "\"Beyond\" from Elio", "director": "Lana Del Rey", "winProbability": 8, "isPredictedWinner": false },
+        { "title": "\"Fall of a Kingdom\" from Hamnet", "director": "Max Richter & Maggie O'Farrell", "winProbability": 3, "isPredictedWinner": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "headline": "Timothée Chalamet's CNN Slip",
+      "detail": "Said 'no one cares' about ballet and opera on CNN, alienating Academy voters and likely costing him the Best Actor win despite Golden Globe and Critics Choice victories.",
+      "severity": "high"
+    },
+    {
+      "headline": "Josh Safdie On-Set Controversy",
+      "detail": "The Marty Supreme director faced allegations of placing a minor in an uncomfortable on-set situation with a non-professional actor, causing major damage to his Oscar campaign.",
+      "severity": "high"
+    },
+    {
+      "headline": "Wicked: For Good — Total Shutout",
+      "detail": "The first Wicked scored 10 nominations. The sequel got zero — not a single nod for Cynthia Erivo, Ariana Grande, or director Jon M. Chu. Michelle Yeoh publicly called it 'truly, truly disappointing.'",
+      "severity": "high"
+    },
+    {
+      "headline": "Paul Mescal Snubbed Again",
+      "detail": "Despite near-universal praise for his performance in Hamnet, Mescal was passed over for Best Actor while co-star Jessie Buckley got a nomination. His second high-profile snub in two years.",
+      "severity": "high"
+    },
+    {
+      "headline": "Sinners: Most Nominations Ever, But Underdog for Best Picture",
+      "detail": "With a record-breaking 16 nominations and a 97% RT score, Sinners made horror history — yet sits at just 27% odds for Best Picture against One Battle After Another's 69%. The Academy has never been here before.",
+      "severity": "low"
+    },
+    {
+      "headline": "Kate Hudson's Shock Comeback Nomination",
+      "detail": "Absent from the Oscar conversation for over 20 years, Hudson's surprise nomination left even her fans stunned. Whether it's a feel-good story or an eyebrow-raising pick depends who you ask.",
+      "severity": "low"
+    },
+    {
+      "headline": "Conan O'Brien Hosting",
+      "detail": "The beloved late-night host returns to a major awards stage for the first time in years. Known for his quick wit and self-deprecating humor, expectations are sky-high for the ceremony.",
+      "severity": "low"
+    }
+  ]
+}
