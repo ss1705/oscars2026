@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
+import { ChatOpenAI } from "@langchain/openai";
 import { WikipediaQueryRun } from "@langchain/community/tools/wikipedia_query_run";
 import { DuckDuckGoSearch } from "@langchain/community/tools/duckduckgo_search";
 import nominees from "@/data/nominees.json";
@@ -56,9 +56,10 @@ export async function POST(req: NextRequest) {
   const { message, history } = await req.json();
   const historyMessages = buildHistory(history || []);
 
-  const model = new ChatGoogleGenerativeAI({
-    apiKey: process.env.GOOGLE_API_KEY,
-    model: "gemini-2.0-flash",
+  const model = new ChatOpenAI({
+    apiKey: process.env.OPENROUTER_API_KEY,
+    model: "meta-llama/llama-3.3-70b-instruct:free",
+    configuration: { baseURL: "https://openrouter.ai/api/v1" },
     temperature: 0.7,
   }).bindTools(tools);
 
@@ -97,9 +98,10 @@ export async function POST(req: NextRequest) {
     catch { toolResult = "Search temporarily unavailable."; }
   }
 
-    const plainModel = new ChatGoogleGenerativeAI({
-      apiKey: process.env.GOOGLE_API_KEY,
-      model: "gemini-2.0-flash",
+    const plainModel = new ChatOpenAI({
+      apiKey: process.env.OPENROUTER_API_KEY,
+      model: "meta-llama/llama-3.3-70b-instruct:free",
+      configuration: { baseURL: "https://openrouter.ai/api/v1" },
       temperature: 0.7,
     });
 
