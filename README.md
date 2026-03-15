@@ -39,7 +39,7 @@ A sleek, real-time web app covering everything you need to know before the **98t
 git clone https://github.com/ss1705/oscars2026.git
 cd oscars2026
 npm install
-
+```
 Create a `.env.local` file:
 
 ```
