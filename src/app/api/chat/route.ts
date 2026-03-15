@@ -9,14 +9,20 @@ import { HumanMessage, AIMessage, SystemMessage } from "@langchain/core/messages
 const wikipedia = new WikipediaQueryRun({ topKResults: 1, maxDocContentLength: 2000 });
 const duckduckgo = new DuckDuckGoSearch({ maxResults: 3 });
 const tools = [wikipedia, duckduckgo];
+const nomineesSummary = nominees.categories.map((c: any) => `${c.name}: ${c.nominees.map((n: any) => n.film || n.name).join(", ")}`
+).join("\n");
+const dramaSummary = drama.items.map((d: any) => `${d.film}: ${d.summary}`).join("\n");
 
 const SYSTEM_PROMPT = `
 You are OscarBot, a witty and passionate cinephile assistant for the 2026 Oscars (98th Academy Awards).
 You love movies and love talking about them. You have strong opinions and aren't afraid to share them.
 
 You have this base data available:
-NOMINEES & PREDICTIONS: ${JSON.stringify(nominees, null, 2).replace(/\{/g, "{{").replace(/\}/g, "}}")}
-DRAMA & CONTROVERSIES: ${JSON.stringify(drama, null, 2).replace(/\{/g, "{{").replace(/\}/g, "}}")}
+NOMINEES & PREDICTIONS:
+${nomineesSummary}
+
+DRAMA & CONTROVERSIES:
+${dramaSummary}
 
 Rules:
 - For win probabilities and predictions, use the base data above.
@@ -69,26 +75,23 @@ export async function POST(req: NextRequest) {
 
     if (toolCall.name === "wikipedia-api") {
       try {
-      toolResult = await wikipedia.invoke(toolCall.args.query ?? toolCall.args.input);
-      if (toolResult.length < 500) {
-        try {
-              const ddgResult = await duckduckgo.invoke(
-        `${toolCall.args.query ?? toolCall.args.input} film plot 2026`
-      );
-      toolResult += "\n\nAdditional info:\n" + ddgResult;
-    }  
-    catch { }
-  }
-}
-    catch(e) {
-      toolResult = "No detailed plot found.";
+        const query = toolCall.args.query ?? toolCall.args.input ?? message;
+        toolResult = await wikipedia.invoke(query);
+        if (toolResult.length < 500) {
+          try {
+            const ddgResult = await duckduckgo.invoke(`${query} film plot 2026`);
+            toolResult += "\n\nAdditional info:\n" + ddgResult;
+          } catch { }
+        }
+      } catch(e) {
+        toolResult = "No detailed plot found.";
+      }
+    } else if (toolCall.name === "duckduckgo-search") {
+      try {
+        const query = toolCall.args.query ?? toolCall.args.input ?? message;
+        toolResult = await duckduckgo.invoke(query);
+      } catch { toolResult = "Search temporarily unavailable."; }
     }
-  } else if (toolCall.name === "duckduckgo-search") {
-    try {
-      toolResult = await duckduckgo.invoke(toolCall.args.query ?? toolCall.args.input);
-    } 
-    catch { toolResult = "Search temporarily unavailable."; }
-  }
 
     const plainModel = new ChatGroq({
       apiKey: process.env.GROQ_API_KEY,
