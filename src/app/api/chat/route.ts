@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { ChatOpenAI } from "@langchain/openai";
+import { ChatGroq } from "@langchain/groq";
 import { WikipediaQueryRun } from "@langchain/community/tools/wikipedia_query_run";
 import { DuckDuckGoSearch } from "@langchain/community/tools/duckduckgo_search";
 import nominees from "@/data/nominees.json";
@@ -56,10 +56,9 @@ export async function POST(req: NextRequest) {
   const { message, history } = await req.json();
   const historyMessages = buildHistory(history || []);
 
-  const model = new ChatOpenAI({
-    apiKey: process.env.OPENROUTER_API_KEY,
-    model: "openrouter/free",
-    configuration: { baseURL: "https://openrouter.ai/api/v1" },
+  const model = new ChatGroq({
+    apiKey: process.env.GROQ_API_KEY,
+    model: "llama-3.3-70b-versatile",
     temperature: 0.7,
   }).bindTools(tools);
 
@@ -98,10 +97,9 @@ export async function POST(req: NextRequest) {
     catch { toolResult = "Search temporarily unavailable."; }
   }
 
-    const plainModel = new ChatOpenAI({
-      apiKey: process.env.OPENROUTER_API_KEY,
-      model: "openrouter/free",
-      configuration: { baseURL: "https://openrouter.ai/api/v1" },
+    const plainModel = new ChatGroq({
+      apiKey: process.env.GROQ_API_KEY,
+      model: "llama-3.3-70b-versatile",
       temperature: 0.7,
     });
 
