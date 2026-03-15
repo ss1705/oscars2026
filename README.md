@@ -39,3 +39,32 @@ A sleek, real-time web app covering everything you need to know before the **98t
 git clone https://github.com/ss1705/oscars2026.git
 cd oscars2026
 npm install
+
+Create a `.env.local` file:
+
+```
+GROQ_API_KEY=your_groq_key
+TAVILY_API_KEY=your_tavily_key
+TMDB_TOKEN=your_tmdb_token
+```
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+---
+
+## Data
+
+All nominee data, win probabilities, and drama items live in:
+
+- `src/data/nominees.json` — all categories and nominees
+- `src/data/drama.json` — The Tea drama feed
+
+---
+
+## License
+
+MIT — built for fun the night before the Oscars 🍿
