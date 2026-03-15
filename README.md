@@ -2,7 +2,7 @@
 
 A sleek, real-time web app covering everything you need to know before the **98th Academy Awards** ceremony on March 15, 2026.
 
-🔗 **Live:** [oscars2026.vercel.app](https://oscars2026.vercel.app)
+🔗 **Live:** [oscars-guide.vercel.app](https://oscars2026.vercel.app)
 
 ---
 
