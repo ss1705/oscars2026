@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { ChatGroq } from "@langchain/groq";
+import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { WikipediaQueryRun } from "@langchain/community/tools/wikipedia_query_run";
 import { DuckDuckGoSearch } from "@langchain/community/tools/duckduckgo_search";
 import nominees from "@/data/nominees.json";
@@ -9,14 +9,22 @@ import { HumanMessage, AIMessage, SystemMessage } from "@langchain/core/messages
 const wikipedia = new WikipediaQueryRun({ topKResults: 1, maxDocContentLength: 2000 });
 const duckduckgo = new DuckDuckGoSearch({ maxResults: 3 });
 const tools = [wikipedia, duckduckgo];
+const nomineesSummary = nominees.categories.map((c: any) =>
+  `${c.name}: ${c.nominees.map((n: any) => n.film || n.name).join(", ")}`
+).join("\n");
+
+const dramaSummary = drama.items.map((d: any) => `${d.film}: ${d.summary}`).join("\n");
 
 const SYSTEM_PROMPT = `
 You are OscarBot, a witty and passionate cinephile assistant for the 2026 Oscars (98th Academy Awards).
 You love movies and love talking about them. You have strong opinions and aren't afraid to share them.
 
 You have this base data available:
-NOMINEES & PREDICTIONS: ${JSON.stringify(nominees, null, 2).replace(/\{/g, "{{").replace(/\}/g, "}}")}
-DRAMA & CONTROVERSIES: ${JSON.stringify(drama, null, 2).replace(/\{/g, "{{").replace(/\}/g, "}}")}
+NOMINEES & PREDICTIONS:
+${nomineesSummary}
+
+DRAMA & CONTROVERSIES:
+${dramaSummary}
 
 Rules:
 - For win probabilities and predictions, use the base data above.
@@ -48,9 +56,9 @@ export async function POST(req: NextRequest) {
   const { message, history } = await req.json();
   const historyMessages = buildHistory(history || []);
 
-  const model = new ChatGroq({
-    apiKey: process.env.GROQ_API_KEY,
-    model: "llama-3.3-70b-versatile",
+  const model = new ChatGoogleGenerativeAI({
+    apiKey: process.env.GOOGLE_API_KEY,
+    model: "gemini-2.0-flash",
     temperature: 0.7,
   }).bindTools(tools);
 
@@ -89,9 +97,9 @@ export async function POST(req: NextRequest) {
     catch { toolResult = "Search temporarily unavailable."; }
   }
 
-    const plainModel = new ChatGroq({
-      apiKey: process.env.GROQ_API_KEY,
-      model: "llama-3.3-70b-versatile",
+    const plainModel = new ChatGoogleGenerativeAI({
+      apiKey: process.env.GOOGLE_API_KEY,
+      model: "gemini-2.0-flash",
       temperature: 0.7,
     });
 
