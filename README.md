@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏆 Oscars 2026 — Predictions, Drama & OscarBot
+
+An interactive web app for the 98th Academy Awards featuring live predictions,
+behind-the-scenes drama, and an AI-powered chatbot that knows everything about
+the 2026 Oscars.
+
+🔗 **Live Site:** [](https://oscars-guide.vercel.app/)
+
+---
+
+## Features
+
+- 🎬 **Nominees & Predictions** — Browse all major categories with win
+  probabilities and predicted winners
+- ☕ **Drama Board** — Controversies, snubs, and behind-the-scenes tea from
+  this year's awards season
+- 🤖 **OscarBot** — An AI chatbot powered by Groq (Llama 3.3 70B) that answers
+  questions about nominees, plots, predictions, and Oscar drama in real time
+  using Wikipedia and DuckDuckGo
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 15 (App Router) |
+| Styling | Tailwind CSS |
+| AI Model | Llama 3.3 70B via Groq API |
+| LLM Orchestration | LangChain.js |
+| Tools | Wikipedia API, DuckDuckGo Search |
+| Deployment | Vercel |
+
+---
+
+## OscarBot
+
+OscarBot is a witty, opinionated cinephile assistant built with LangChain's
+tool-calling pipeline on top of Groq's Llama 3.3 70B model.
+
+**How it works:**
+1. User sends a message via the chat UI
+2. The model decides whether to call a tool (Wikipedia for film/cast details,
+   DuckDuckGo for news and current events)
+3. If a tool is called, the result is fed back into the model as context
+4. The model responds naturally — no technical jargon, no process narration
+
+**Data sources:**
+- `nominees.json` — All nominated films, predicted winners, and win
+  probabilities per category
+- `drama.json` — Curated controversies and headlines from the 2026 awards
+  season
+- Wikipedia — Real-time plot and cast lookups
+- DuckDuckGo — Real-time news and precursor award results
+
+---
+
+## Project Structure
+├── src/
+│ ├── app/
+│ │ ├── page.tsx # Main page
+│ │ └── api/
+│ │ └── chat/
+│ │ └── route.ts # OscarBot API endpoint
+│ ├── components/
+│ │ └── ChatBox.tsx # Chat UI component
+│ └── data/
+│ ├── nominees.json # Nominees + predictions data
+│ └── drama.json # Drama + controversies data
+├── public/
+└── ...
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- A [Groq API key](https://console.groq.com)
+
+### Installation
+
+```bash
+git clone https://github.com/ss1705/oscars-2026.git
+cd oscars-2026
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file:
+GROQ_API_KEY=your_groq_api_key_here
+
+
+### Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+Deployed on Vercel. To deploy your own:
 
-To learn more about Next.js, take a look at the following resources:
+1. Push to GitHub
+2. Import the repo on [vercel.com](https://vercel.com)
+3. Add `GROQ_API_KEY` to Environment Variables
+4. Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by Shwetha Sadanand for the 98th Academy Awards (2026).
