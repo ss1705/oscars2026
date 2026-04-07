@@ -56,19 +56,19 @@ tool-calling pipeline on top of Groq's Llama 3.3 70B model.
 ---
 
 ## Project Structure
-├── src/
-│ ├── app/
-│ │ ├── page.tsx # Main page
-│ │ └── api/
-│ │ └── chat/
-│ │ └── route.ts # OscarBot API endpoint
-│ ├── components/
-│ │ └── ChatBox.tsx # Chat UI component
-│ └── data/
-│ ├── nominees.json # Nominees + predictions data
-│ └── drama.json # Drama + controversies data
-├── public/
-└── ...
+├── src/ \
+│ ├── app/ \
+│ │ ├── page.tsx # Main page \
+│ │ └── api/ \
+│ │ └── chat/ \
+│ │ └── route.ts # OscarBot API endpoint \
+│ ├── components/ \
+│ │ └── ChatBox.tsx # Chat UI component \
+│ └── data/ \
+│ ├── nominees.json # Nominees + predictions data \
+│ └── drama.json # Drama + controversies data \
+├── public/ \
+└── ... \
 
 ---
 
