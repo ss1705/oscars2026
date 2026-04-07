@@ -4,7 +4,7 @@ An interactive web app for the 98th Academy Awards featuring live predictions,
 behind-the-scenes drama, and an AI-powered chatbot that knows everything about
 the 2026 Oscars.
 
-🔗 **Live Site:** [](https://oscars-guide.vercel.app/)
+🔗 **Live Site:** [https://oscars-guide.vercel.app/](https://oscars-guide.vercel.app/)
 
 ---
 
